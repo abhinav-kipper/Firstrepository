@@ -249,3 +249,12 @@ git commit -m "renamed"
 ---Other way to rename (move)
 
 git mv  second.txt secondrenamed.txt
+
+
+------Commit directly to repository from working file-------
+
+*****$ git commit -am "Updated directly"
+
+But not always great
+DONT USE WHEN DELETING RENAMING FILES
+ALSO WHEN MORE THAN ONE FILES THERE AND ONLY SOME NEEDS TO BE UPDATED NOT ALL.THIS JUSTS COMMITS EVERYTHING not what we want.
