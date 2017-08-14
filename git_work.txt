@@ -258,3 +258,22 @@ git mv  second.txt secondrenamed.txt
 But not always great
 DONT USE WHEN DELETING RENAMING FILES
 ALSO WHEN MORE THAN ONE FILES THERE AND ONLY SOME NEEDS TO BE UPDATED NOT ALL.THIS JUSTS COMMITS EVERYTHING not what we want.
+
+
+----------checkout----
+checkout means take something from repository and make it your working copy
+
+$ git checkout -- secondrenamed.txt
+Dash Dash deals with branching
+It means we arent checking out with the branches but only this file.
+
+
+File changed to previous. Thumbs up.
+
+
+---------Unstage Files-------------
+ $ git reset HEAD git_work.txt
+Unstaged changes after reset:
+M       git_work.txt
+
+----Getting Older Versions from Repository
