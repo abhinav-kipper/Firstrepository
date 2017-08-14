@@ -177,3 +177,75 @@ Changes not staged for commit:
 
 
 --$ git diff
+
+
+--------Comparing the staging are with the repository----
+
+If we put  a file in staging  area 
+git does not compare it with the repository one 
+and git diff returns nothing even if it is modified.
+
+$git diff --staged
+It compares repository and staging area.
+
+
+-----------Delete files-----------------
+
+$ git rm third.txt
+
+It deletes third.txt from git as well as our  pc.
+ $ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    third.txt
+
+$ git commit -m "This is point in time where we deleted third.txt"
+
+****Now see the magic is we can come back to this snapshot and get the file back.
+
+-----Rename and Move--------------------
+
+Renamed second.txt to secondrenamed.txt
+git status
+
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    third.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git_work.txt
+        deleted:    second.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        secondrenamed.txt
+
+
+git add secondrenamed.txt
+git rm second.txt
+
+git status
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    second.txt -> secondrenamed.txt
+        deleted:    third.txt
+
+
+Now git knows that we actually renamed the file.
+
+git commit -m "renamed"
+
+
+---Other way to rename (move)
+
+git mv  second.txt secondrenamed.txt
