@@ -1,0 +1,65 @@
+It is UNIX... 
+git --version
+
+---------Configuration------------
+git config --global user.name "abhinavkipper"
+
+git config --global user.email "mudgal.abhinav19@gmail.com"
+
+git config --list
+
+git config user.name
+
+----help----
+git help
+
+git help commit
+
+
+----Creating repository (means Project)-------
+
+pwd
+____/c/Users/Manoj
+cd ~ 		Change to HOME
+
+cd ..
+____/c/Users
+
+ls
+
+cd Manoj/Desktop
+
+cd gitwork
+
+$ git init
+
+___Initialized empty Git repository in C:/Users/Manoj/Desktop/gitwork/.git/
+
+------Commit----------
+
+ls -la
+
+drwxr-xr-x 1 Manoj 197609   0 Aug 14 21:41 ./
+drwxr-xr-x 1 Manoj 197609   0 Aug 14 21:36 ../
+drwxr-xr-x 1 Manoj 197609   0 Aug 14 21:41 .git/
+-rw-r--r-- 1 Manoj 197609 531 Aug 14 21:42 git_work.txt
+
+
+Hidden files that manages git.
+
+Let  git know we made changes to out project
+
+---$ git add .
+Add all changes that we made to our current repository. Its  just aware that changes took place.
+But its a two step process
+Next step is commit
+commit is like snapshot.
+commit to git --save this point in time
+
+If ever got messed up later in time come back and redo it.
+
+--$ git commit -m "This is our first commit"
+
+After -m is just a message for identification.
+
+
