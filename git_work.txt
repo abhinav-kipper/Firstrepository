@@ -63,3 +63,55 @@ If ever got messed up later in time come back and redo it.
 After -m is just a message for identification.
 
 
+
+--------Adding files and the Commit Log------
+
+
+$ git log
+It allows us to view our commit  history.
+
+$ git log --author="abhinav"
+
+Author: abhinavkipper <mudgal.abhinav19@gmail.com>
+Date:   Mon Aug 14 21:51:30 2017 +0530
+
+    This is our first commit
+
+
+$ git status
+On branch master.
+nothing to commit,working directory clean
+
+
+Added two files and again saw the status
+
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git_work.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        second.txt
+        third.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+---Remember it was a two step process
+Add and commit.
+
+$ git add second.txt
+Added it to like a the staging  area
+
+working copy -> staging area -> repository.
+
+
+$ git commit -m "Second file added to repository" 
+
+Commited secondfile (only) to repository.
+
+git add third.txt
+git commit -m "Third one joins now."
