@@ -25,5 +25,48 @@ FETCHING is getting from the server
 $ git push -u github_firstrep master
 
 
-
+-----getignore------
+.getignore file
+Inside it
+.name
+------branch (Copy)------
+default branch is master.
+Make changes in copied branches and add to master .
  
+-------pull-----
+new pull-suggestions commits changes
+merge pull- accept changes
+
+------raw-------
+download from raw url not github normal
+as html heads may get downloaaded as well for a file.
+
+---blame---
+who to blame
+tells who changed what
+
+--history--
+history for one file
+on the other hand commits are for entire project.
+
+-----watch-----
+notifications to changes will start coming to you.
+
+-----star----
+saving or bookmarking the page/project.
+
+-----Fork----
+Make a new branch of this project.
+----issues---
+Any problem bug or enhancement etc
+just add a new issue.
+
+--labels---
+label tells what kind of issue it is
+-----assignee-----------
+assign someone or someone assigned
+
+closed issue means finished issue.
+
+----wiki------
+Details /wiki of project/repoitory
