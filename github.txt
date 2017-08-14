@@ -1,0 +1,29 @@
+github--
+
+It asks while creating repository an option to initialise using Readme
+but we did using init only so no need.
+
+-----Pushing to a GitHub  Repository----------
+
+setup the remote between local and git hubserver
+as tiring to type this whole address
+https://github.com/abhinav-kipper/Firstrepository.git
+
+
+$  git remote add github_firstrep https://github.com/abhinav-kipper/Firstrepository.git
+
+$ git remote
+github_firstrep
+
+
+Adding files/ making changes to server (github)is called PUSHING
+
+FETCHING is getting from the server
+
+---------PUSH-----
+
+$ git push -u github_firstrep master
+
+
+
+ 
