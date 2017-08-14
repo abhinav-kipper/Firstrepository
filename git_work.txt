@@ -277,3 +277,7 @@ Unstaged changes after reset:
 M       git_work.txt
 
 ----Getting Older Versions from Repository
+
+$ git checkout {commit id upto any digits take from log git will recognise entire id itself } -- filename
+
+$ git checkout 3df7da -- secondrenamed.txt
