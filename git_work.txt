@@ -126,3 +126,54 @@ It tells I modified git_work.txt file
 So,
 git add git_work.txtt
 git commit -m "updated git_work.txt"
+
+
+--How to commit changes for more than one files
+
+
+$ git status
+
+git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git_work.txt
+        modified:   second.txt
+        modified:   third.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git add .
+
+git status
+
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   git_work.txt
+        modified:   second.txt
+        modified:   third.txt
+
+
+
+All files went to staging area
+
+$ git commit -m "Multiple files."
+Done.
+
+--------Viewing  the changed that you made ----------------------
+
+$ git status
+
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git_work.txt
+
+
+--$ git diff
