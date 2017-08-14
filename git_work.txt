@@ -115,3 +115,14 @@ Commited secondfile (only) to repository.
 
 git add third.txt
 git commit -m "Third one joins now."
+
+
+--------How to edit files---
+
+git status
+
+It tells I modified git_work.txt file
+
+So,
+git add git_work.txtt
+git commit -m "updated git_work.txt"
